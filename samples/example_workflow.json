@@ -1,0 +1,11 @@
+{
+  "Comment": "A simple workflow with a Pass state",
+  "StartAt": "HelloWorld",
+  "States": {
+    "HelloWorld": {
+      "Type": "Pass",
+      "Result": "Hello, World3!",
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Comment": "A simple state machine with three states",
+  "StartAt": "FirstState",
+  "States": {
+    "FirstState": {
+      "Type": "Pass",
+      "Next": "SecondState"
+    },
+    "SecondState": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789012:function:MyTaskFunction",
+      "Next": "ThirdState"
+    },
+    "ThirdState": {
+      "Type": "Pass",
+      "End": true
+    }
+  }
+}
