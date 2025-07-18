@@ -43,7 +43,7 @@ def execute_state_machine():
 
 @app.route("/execute-example", methods=["GET"])
 def execute_example_workflow():
-    with open("/home/user/my-step-functions/samples/example_workflow_3.json", "r") as f:
+    with open("/home/user/my-step-functions/samples/example_workflow.json", "r") as f:
         definition = json.load(f)
 
     sm = StateMachine()
